@@ -1,0 +1,105 @@
+ /* Header Styles */
+ .header {
+     padding: 20px 0;
+     background: transparent;
+ }
+
+ .navbar {
+     padding: 0;
+ }
+
+ .navbar-brand.logo {
+     font-size: 28px;
+     font-weight: 700;
+     color: #ffffff;
+     letter-spacing: 1px;
+ }
+
+
+ .navbar-toggler:focus {
+     box-shadow: 0 0 0 0.2rem rgba(77, 166, 255, 0.3);
+ }
+
+
+ .nav-links {
+     display: flex;
+     gap: 40px;
+     align-items: center;
+     list-style: none;
+     margin: 0;
+ }
+
+ .nav-links .nav-link {
+     background: transparent !important;
+     color: #ffffff;
+     border: 1px solid transparent;
+     text-decoration: none;
+     font-size: 15px;
+     font-weight: 500;
+     transition: color 0.3s ease;
+     padding: 8px 30px !important;
+     border-radius: 25px;
+     transition: 0.3s ease;
+ }
+
+ .nav-links .nav-link:hover,
+ .nav-links .nav-link.active {
+     background-color: #F8F8F80F !important;
+     color: white;
+     position: relative;
+ }
+
+
+ .nav-links .nav-link:hover::before,
+ .nav-links .nav-link.active::before {
+     content: '';
+     position: absolute;
+     inset: 0;
+     border-radius: 50px;
+     padding: 1px;
+     background: linear-gradient(to bottom,
+             rgba(255, 255, 255, 0.6),
+             rgba(255, 255, 255, 0.1));
+     -webkit-mask:
+         linear-gradient(#fff 0 0) content-box,
+         linear-gradient(#fff 0 0);
+     -webkit-mask-composite: xor;
+     mask-composite: exclude;
+ }
+
+
+ .nav-links .nav-link.active {
+     background: rgba(255, 255, 255, 0.1);
+ }
+
+ /* Mobile Menu Styles */
+ @media (max-width: 991px) {
+     .navbar-collapse {
+         background: #09283766;
+         margin-top: 20px;
+         padding: 20px;
+         border-radius: 10px;
+         border: 1px solid rgba(255, 255, 255, 0.1);
+     }
+
+     .nav-item {
+         width: 100%;
+         text-align: center;
+     }
+
+     .nav-links {
+         flex-direction: column;
+         gap: 10px;
+         align-items: flex-start;
+     }
+
+     .navbar-brand.logo {
+         margin: 0px auto;
+         max-width: 55px;
+     }
+
+     .nav-links .nav-link {
+         width: 100%;
+         padding: 12px 20px;
+     }
+ }
