@@ -45,18 +45,34 @@ export default function Benefits() {
   ];
 
   return (
-    <section className="benefits-section page-section py-5 my-5">
+    <section
+      className="benefits-section page-section py-5 my-5"
+      data-aos="fade-up"
+      data-aos-delay="100"
+    >
       <div className="container">
-        <h2 className="main-title mb-3">nouf Benefits</h2>
+        <h2
+          className="main-title mb-3"
+          data-aos="fade-down"
+          data-aos-delay="200"
+        >
+          nouf Benefits
+        </h2>
         <div className="benefits-section">
-          <div className="row g-4 justify-content-center">
-            {benefitsData.map((benefit) => (
+          <div
+            className="row g-4 justify-content-center"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            {benefitsData.map((benefit, index) => (
               <BenefitCard
                 key={benefit.id}
                 icon={benefit.icon}
                 titleHighlight={benefit.titleHighlight}
                 title={benefit.title}
                 description={benefit.description}
+                animation="fade-up"
+                animationDelay={400 + index * 150}
               />
             ))}
           </div>

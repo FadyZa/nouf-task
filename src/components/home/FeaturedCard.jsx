@@ -1,6 +1,17 @@
-export default function FeaturedCard({ img, title, description, highlight }) {
+export default function FeaturedCard({
+  img,
+  title,
+  description,
+  highlight,
+  animation,
+  animationDelay,
+}) {
   return (
-    <div className="col-lg-4 col-md-6">
+    <div
+      className="col-lg-4 col-md-6"
+      data-aos={animation}
+      data-aos-delay={animationDelay}
+    >
       <div className="feature-card gradient-border">
         <div className="feature-icon-wrapper">
           <div className="icon-dots">

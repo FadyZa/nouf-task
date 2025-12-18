@@ -44,10 +44,20 @@ export default function HowItWorks() {
     },
   ];
   return (
-    <section className="howitworks-section page-section py-5 my-5">
+    <section
+      className="howitworks-section page-section py-5 my-5"
+      data-aos="fade-up"
+      data-aos-delay="100"
+    >
       <div className="container">
-        <h2 className="main-title mb-3">How it Works..?</h2>
-        <div className="steps-section">
+        <h2
+          className="main-title mb-3"
+          data-aos="fade-down"
+          data-aos-delay="200"
+        >
+          How it Works..?
+        </h2>
+        <div className="steps-section" data-aos="fade-up" data-aos-delay="300">
           <div className="center-line">
             <span className="top-line"></span>
             <span className="bottom-line"></span>
@@ -59,6 +69,8 @@ export default function HowItWorks() {
               details={step.description}
               icon={step.icon}
               title={step.title}
+              animation="fade-up"
+              animationDelay={400 + i * 200}
             />
           ))}
         </div>

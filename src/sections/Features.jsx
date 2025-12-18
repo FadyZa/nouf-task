@@ -49,17 +49,29 @@ export default function Features() {
   ];
 
   return (
-    <section className="features-section page-section py-5 my-5">
+    <section
+      className="features-section page-section py-5 my-5"
+      data-aos="fade-up"
+      data-aos-delay="100"
+    >
       <div className="container">
-        <h2 className="main-title text-center">Features & Tech</h2>
-        <div class="row g-4">
-          {featuresData.map((feature) => (
+        <h2
+          className="main-title text-center"
+          data-aos="fade-down"
+          data-aos-delay="200"
+        >
+          Features & Tech
+        </h2>
+        <div className="row g-4">
+          {featuresData.map((feature, index) => (
             <FeaturedCard
               key={feature.id}
               title={feature.title}
               description={feature.description}
               img={feature.img}
               highlight={feature.highlight}
+              animation="fade-up"
+              animationDelay={300 + index * 100}
             />
           ))}
         </div>

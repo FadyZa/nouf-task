@@ -3,9 +3,15 @@ export default function BenefitCard({
   titleHighlight,
   title,
   description,
+  animation,
+  animationDelay,
 }) {
   return (
-    <div className="col-12 col-md-6 col-lg-4">
+    <div
+      className="col-12 col-md-6 col-lg-4"
+      data-aos={animation}
+      data-aos-delay={animationDelay}
+    >
       <div className="benefit-card gradient-border">
         <img
           src={icon}

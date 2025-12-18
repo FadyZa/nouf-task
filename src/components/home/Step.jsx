@@ -1,6 +1,17 @@
-export default function Step({ stepNum, title, details, icon }) {
+export default function Step({
+  stepNum,
+  title,
+  details,
+  icon,
+  animation,
+  animationDelay,
+}) {
   return (
-    <div className={`step ${stepNum % 2 === 1 ? "first" : "second"}`}>
+    <div
+      className={`step ${stepNum % 2 === 1 ? "first" : "second"}`}
+      data-aos={animation}
+      data-aos-delay={animationDelay}
+    >
       <section>
         <div className="step-num">{stepNum}</div>
         <h3 className="step-title">{title}</h3>

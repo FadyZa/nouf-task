@@ -33,12 +33,23 @@ export default function Faqs() {
 
   return (
     <>
-      <div className="faq-section">
+      <div className="faq-section" data-aos="fade-up" data-aos-delay="100">
         <div className="container">
-          <h2 className="main-title mb-3">FAQ’s</h2>
+          <h2
+            className="main-title mb-3"
+            data-aos="fade-down"
+            data-aos-delay="200"
+          >
+            FAQ’s
+          </h2>
           <div className="faq-container">
-            {faqs.map((faq) => (
-              <div key={faq.id} className="faq-item">
+            {faqs.map((faq, index) => (
+              <div
+                key={faq.id}
+                className="faq-item"
+                data-aos="fade-up"
+                data-aos-delay={300 + index * 100} // Staggered reveal for each FAQ item
+              >
                 <button
                   onClick={() => toggleFAQ(faq.id)}
                   className="faq-button"
