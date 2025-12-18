@@ -61,34 +61,6 @@ export default function HowItWorks() {
               title={step.title}
             />
           ))}
-          {/* <div className="step first">
-            <section>
-              <div className="step-num">1</div>
-              <h3 className="step-title">Press the Mic </h3>
-              <p className="step-details">
-                Simply tap the microphone button to start your voice search
-                instantly
-              </p>
-            </section>
-            <div className="icon-wrapper">
-              <img src="/mic.png" height="90px" width="90px" alt="step image" />
-            </div>
-          </div>
-          <div className="step second">
-            <section>
-              <div className="step-details">
-                <span className="step-title">Header of Section 2</span>
-              </div>
-              <p>
-                Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed
-                qui veroes praesentium maiores, sint eos vero sapiente voluptas
-                debitis dicta dolore.
-              </p>
-            </section>
-            <div className="icon-wrapper">
-              <i className="icon fas fa-star"></i>
-            </div>
-          </div> */}
         </div>
       </div>
     </section>

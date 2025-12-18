@@ -59,22 +59,6 @@ export default function Benefits() {
                 description={benefit.description}
               />
             ))}
-            {/* <div className="col-12 col-md-6 col-lg-4">
-              <div className="benefit-card gradient-border">
-                <img
-                  src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
-                  alt="Conversion Icon"
-                  className="benefit-icon"
-                />
-                <h3>
-                  <span>Higher</span> Conversion Rates
-                </h3>
-                <p>
-                  When customers find products faster through voice, they
-                  complete purchases more often – boosting your overall sales.
-                </p>
-              </div>
-            </div> */}
           </div>
         </div>
       </div>

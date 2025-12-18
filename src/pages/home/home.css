@@ -93,7 +93,7 @@
         box-shadow: 0 10px 30px rgba(58, 139, 255, 0.2);
     }
 
-    .icon-wrapper {
+    .feature-icon-wrapper {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -188,7 +188,7 @@
         align-items: flex-end;
     }
 
-    .icon-wrapper {
+    .step-icon-wrapper {
         width: calc(50% - 40px);
         display: flex;
         justify-content: flex-start;
@@ -196,7 +196,7 @@
         color: #fff;
     }
 
-    .step.first .icon-wrapper {
+    .step.first .step-icon-wrapper {
         justify-content: flex-end;
     }
 
